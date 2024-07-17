@@ -1,1 +1,149 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+/* Importing Fonts. */
+@font-face {
+    font-family: 'IntroRustG-Base2Line';
+    src: url('/assets/fonts/IntroRustG-Base2Line.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MinionPro-Regular';
+    src: url('/assets/fonts/MinionPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Intro';
+    src: url('/assets/fonts/Intro.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('/assets/fonts/PlayfairDisplay-Medium.ttf') format('truetype');
+}
+
+.separator {
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.padd-rl-3 {
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.p4-vw {
+    padding: 4vw;
+}
+
+.pt-5rem {
+    padding-top: 5rem;
+}
+
+.pb-5rem {
+    padding-bottom: 5rem;
+}
+
+.bottom-section-shape-divider {
+    bottom: 0;
+}
+
+
+
+// padding
+.padded-4 {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Fonts Settings */
+body {
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'MinionPro-Regular', sans-serif; 
+}
+
+.app-title {
+    text-align: center;
+    color: white;
+    font-family: 'IntroRustG-Base2Line', sans-serif;
+    font-size: 3rem;
+}
+
+.app-title-black {
+    font-family: 'IntroRustG-Base2Line', sans-serif;
+    font-size: 3rem;
+}
+
+.app-subtitle {
+    color: white;
+    font-family: 'MinionPro-Regular', sans-serif;
+    font-size: 1rem;
+}
+
+.intro {
+    font-family: 'Intro', sans-serif;
+}
+
+.playfair {
+    font-family: 'playfair', sans-serif;
+}
+
+.intro-rust {
+    font-family: 'IntroRustG-Base2Line', sans-serif;
+}
+
+.minion {
+    font-family: 'MinionPro-Regular', serif;
+}
+
+.padded-top-5 {
+    padding-top: 5rem;
+}
+
+.padded-bottom-1 {
+    padding-bottom: 1rem;
+}
+
+.padded-bottom-2 {
+    padding-bottom: 2rem;
+}
+
+.padded-top-1 {
+    padding-top: 1rem;
+}
+
+.padded-2 {
+    padding: 2.5rem;
+}
+
+
+.wrapper {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 5rem;
+    padding-top: 4rem;
+}
+
+.wrapper2 {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.wrapper3 {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+
+.font2 {
+    font-size: 2rem;
+}
+
+.font3 {
+    font-size: 3rem;
+}
