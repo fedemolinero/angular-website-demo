@@ -1,0 +1,23 @@
+<div class="d-flex flex-column align-items-center justify-content-center">
+    <div class="d-flex justify-content-center align-items-center border-down">
+        <fa-icon class="padded-4" [icon]="faBars"></fa-icon>
+        <h1 class="intro-rust mb-0">OUR PARTNERS</h1>
+        <fa-icon class="padded-4" [icon]="faBars"></fa-icon>
+    </div>
+
+    <div class="carousel-partners">
+        <p-carousel [value]="products" [numVisible]="5" [numScroll]="1" [circular]="true"
+            [responsiveOptions]="responsiveOptions" [showIndicators]="false" [showNavigators]="true"
+            [orientation]="'horizontal'" autoplayInterval="5000">
+            <ng-template let-product pTemplate="item">
+                <div class="border-1 surface-border border-round m-2 p-3">
+                    <div class="mb-3">
+                        <div class="relative mx-auto">
+                            <img [src]="product.url" [alt]="product.name" class="w-full border-round invert" />
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>

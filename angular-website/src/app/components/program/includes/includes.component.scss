@@ -1,0 +1,30 @@
+/* item-table.component.css */
+.table {
+    padding: 1rem;
+}
+
+.table td {
+    background: transparent;
+}
+
+.icon {
+    padding: 1rem;
+    justify-content: center;
+}
+
+.check-icon {
+    color: green;
+    font-weight: bold;
+}
+
+.times-icon {
+    color: red;
+    font-weight: bold;
+}
+
+.lefty {
+    color: #485260;
+    font-size: 0.8rem;
+    padding: 1rem;
+    text-align: left;
+}

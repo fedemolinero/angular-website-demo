@@ -1,0 +1,105 @@
+<div class="d-flex flex-column align-items-center">
+
+  <div class="title d-flex justify-content-center align-items-center">
+    <fa-icon [icon]="faStar"></fa-icon>
+    <h1 class="intro-rust mb-0 padd-rl-3 text-center">PROGRAMS</h1>
+    <fa-icon [icon]="faStar"></fa-icon>
+  </div>
+
+  <h6 class="minion text-center p-5 mb-0">
+    We share their experience and professional barista championships multiple winners
+  </h6>
+
+  <!-- TAB SELECTION -->
+  <div>
+    <ul class="nav nav-tabs d-flex justify-content-center align-items-center">
+      <li class="nav-item" (click)="selectTab(1)" [class.active]="selectedTab === 1">
+        <a class="nav-link intro p4-vw">
+          <h5>BASIC</h5>
+        </a>
+        <div class="active-indicator"></div>
+      </li>
+      <li class="nav-item" (click)="selectTab(2)" [class.active]="selectedTab === 2">
+        <a class="nav-link intro p4-vw">
+          <h5>PREMIUM</h5>
+        </a>
+        <div class="active-indicator"></div>
+      </li>
+      <li class="nav-item" (click)="selectTab(3)" [class.active]="selectedTab === 3">
+        <a class="nav-link intro p4-vw">
+          <h5>PLATINUM</h5>
+        </a>
+        <div class="active-indicator"></div>
+      </li>
+    </ul>
+
+    <div [ngSwitch]="selectedTab">
+      <app-tab1 *ngSwitchCase="1"></app-tab1>
+      <app-tab2 *ngSwitchCase="2"></app-tab2>
+      <app-tab3 *ngSwitchCase="3"></app-tab3>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- TABLES -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-4">
+
+        <table class="coffee-table">
+          <thead>
+            <tr>
+              <th class="intro">Provenance coffee and basic concepts:</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of coffeeTopics">
+              <td class="minion">{{ item }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="col-4">
+        <table class="coffee-table">
+          <thead>
+            <tr>
+              <th class="intro">Coffee Production Technology</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of coffeeProductionTopics">
+              <td class="minion">{{ item }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-4">
+
+        <table class="coffee-table">
+          <thead>
+            <tr>
+              <th class="intro">roasting Technology
+                bean. and Stage
+                types of roasting.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of roastingTopics">
+              <td class="minion">{{ item }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid pt-5">
+    <app-includes></app-includes>
+  </div>
+
+</div>

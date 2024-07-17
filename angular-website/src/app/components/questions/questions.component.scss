@@ -1,0 +1,26 @@
+.customFormField {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+
+.customBtn {
+    border-radius: 0px;
+}
+
+
+
+.imageContainer {
+    background-image: url('../../../assets/background-grains.png');
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 100%;
+    padding: 20px;
+}

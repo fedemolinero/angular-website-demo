@@ -1,0 +1,22 @@
+.navbar-nav .nav-link.active {
+  border-bottom: 3px solid orange;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+}
+
+.logoclass {
+  height: 200px;
+}
+
+.navMain {
+  border-bottom: 1px solid grey;
+}
+
+
+.customContainer {
+  
+}

@@ -1,0 +1,43 @@
+.stars {
+  font-size: 1rem;
+  color: #cdb47b;
+}
+
+.triangle-divider {
+  width: 0;
+  height: 0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-right: 80px solid #cdb47b;
+}
+
+.triangle-divider-inverted {
+  width: 0;
+  height: 0;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 80px solid #cdb47b;
+}
+
+.highlight {
+  color: #cdb47b !important;
+}
+
+.orange-point {
+  width: 5px;
+  height: 5px;
+  background-color: #cdb47b;
+  border-radius: 50%;
+}
+
+.shape-divider-container {
+  position: relative;
+  width: 100%;
+  background:
+    url('../../../assets/masks/mask-banner-down.png') no-repeat bottom/contain,
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}

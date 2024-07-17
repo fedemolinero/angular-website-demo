@@ -1,0 +1,37 @@
+<div class="container-fluid pt-5 pb-5">
+    <div class="row pb-3 imageContainer">
+        <div class="col-md-4 col-lg-4 wrapper col-sm-12 col-xs-12">
+        </div>
+        <div class="col-md-8 col-lg-8 wrapper col-sm-12 col-xs-12">
+            <div class="d-flex justify-content-start separator pt-2">
+                <div class="app-title-black ">HAVE QUESTIONS?</div>
+            </div>
+            <div class="d-flex justify-content-start minion ">
+                <p>Leave a request and we will contact you shortly</p>
+            </div>
+            <div class="row pt-5 pb-5">
+                <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input placeholder="YOUR NAME" type="text" class="form-control intro customFormField"
+                                    id="name" formControlName="name">
+                            </div>
+                            <div class="form-group">
+                                <input placeholder="CONTACT NUMBER" type="text"
+                                    class="form-control intro customFormField" id="contactNumber"
+                                    formControlName="contactNumber">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-end p-3 col-sm-12 col-xs-12">
+                            <button type="submit"
+                                class="btn btn-outline-dark customBtn w-100 btn-lg btn-block intro p-3">SEND</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

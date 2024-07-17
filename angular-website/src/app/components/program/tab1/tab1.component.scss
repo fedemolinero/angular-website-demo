@@ -1,0 +1,22 @@
+.section-with-bg-text {
+    position: relative;
+    padding: 3rem;
+}
+
+.section-with-bg-text::before {
+    content: "BASIC";
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-10%, -10%);
+    font-size: 120px;
+    font-family: 'Intro', sans-serif;
+    color: rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.price{
+    font-size: 4rem;
+}
